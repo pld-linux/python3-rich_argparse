@@ -5,18 +5,18 @@
 Summary:	Rich help formatters for argparse and optparse
 Summary(pl.UTF-8):	Bogate funkcje formatujące pomoc dla argparse i optparse
 Name:		python3-rich_argparse
-Version:	1.7.1
+Version:	1.8.0
 Release:	1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/rich-argparse/
 Source0:	https://files.pythonhosted.org/packages/source/r/rich-argparse/rich_argparse-%{version}.tar.gz
-# Source0-md5:	7b2f1bcac3742d37fe4ae967ae65609e
+# Source0-md5:	550d71759d32245da9a2aa67b23e749b
 URL:		https://pypi.org/project/rich-argparse/
 BuildRequires:	python3-build
 BuildRequires:	python3-hatchling >= 1.11.0
 BuildRequires:	python3-installer
-BuildRequires:	python3-modules >= 1:3.8
+BuildRequires:	python3-modules >= 1:3.9
 %if %{with tests}
 BuildRequires:	python3-pytest
 BuildRequires:	python3-rich >= 11.0.0
@@ -26,7 +26,7 @@ BuildRequires:	python3-typing_extensions
 %endif
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 2.044
-Requires:	python3-modules >= 1:3.8
+Requires:	python3-modules >= 1:3.9
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
